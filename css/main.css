@@ -1,0 +1,82 @@
+html,
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 0;
+}
+
+/* Default hero styles */
+.hero {
+	align-items: center;
+	background-color: #FF5722;
+	border-bottom: 1px solid #ffffff;
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Hero h1 */
+.hero h1,
+.hero-content h1 {
+	color: #ecf0f1;
+	font-size: 48px;
+	margin-bottom: 30px;
+	margin-top: 0;
+	position: relative;
+}
+
+.hero h1:before {
+	background-color: #ecf0f1;
+	bottom: -10px;
+	content: '';
+	display: block;
+	height: 1px;
+	left: 15%;
+	position: absolute;
+	width: 70%;
+}
+
+.hero h3 {
+	color: #ffffff;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+/* Hero link */
+.hero-home-link {
+	color: #ecf0f1;
+	font-size: 24px;
+	display: block;
+	padding-left: 30px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.hero-home-link:before {
+	background: url(../images/arrow-left.svg) no-repeat center center;
+	background-size: 20px;
+	content: '';
+	display: block;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	top: 10px;
+	transition: left 0.2s ease;
+	width: 20px;
+}
+
+.hero-home-link:hover:before {
+	left: -2px;
+}
+
+/* Page Content */
+.page-content {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 50px 25px;
+	width: 100%;
+}
